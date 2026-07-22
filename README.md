@@ -6,6 +6,14 @@ Individual-level harmonised data and prediction exports are intentionally exclud
 
 Development period: NHANES 2005-2018. One-time temporal evaluation: NHANES 2021-2023. Elastic Net is primary; XGBoost is secondary. A post-run implementation audit replaced unmatched MEC-trained core predictions in fasting comparisons with a core selected and fitted solely in 2005-2018 under the unchanged locked grid; original outputs were archived with hashes. No GBD or other cohort data, no SMOTE, and no temporal-result-dependent tuning, refitting, or recalibration were used.
 
+## Permanent archive and citation
+
+- Frozen GitHub release: [v1.0.0](https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.0.0)
+- Version-specific Zenodo DOI: [10.5281/zenodo.21487069](https://doi.org/10.5281/zenodo.21487069)
+- All-versions Zenodo DOI: [10.5281/zenodo.21487068](https://doi.org/10.5281/zenodo.21487068)
+
+Use the version-specific DOI when citing the exact release used for the manuscript. The all-versions DOI resolves to the latest archived version.
+
 ## Licensing
 
 - Analytical code, locked configurations, and frozen model objects are released under the MIT License; see `LICENSE-CODE-MIT.txt`.

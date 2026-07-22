@@ -4,6 +4,9 @@ title: "NHANES CVD incremental validation reproducibility archive"
 type: software
 version: 1.0.0
 date-released: 2026-07-22
+doi: "10.5281/zenodo.21487069"
+repository-code: "https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation"
+url: "https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.0.0"
 authors:
   - family-names: Li
     given-names: Haoyang
