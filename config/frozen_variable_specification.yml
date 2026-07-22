@@ -1,0 +1,69 @@
+model0_core:
+- age
+- sex
+- race_ethnicity
+- education
+- smoking
+- bmi
+- mean_sbp
+- diabetes
+- total_cholesterol
+- hdl_cholesterol
+model1_renal:
+- age
+- sex
+- race_ethnicity
+- education
+- smoking
+- bmi
+- mean_sbp
+- diabetes
+- total_cholesterol
+- hdl_cholesterol
+- egfr
+- log2_uacr
+model2_metabolic:
+- age
+- sex
+- race_ethnicity
+- education
+- smoking
+- bmi
+- mean_sbp
+- diabetes
+- total_cholesterol
+- hdl_cholesterol
+- tyg_wc
+model3_inflammatory:
+- age
+- sex
+- race_ethnicity
+- education
+- smoking
+- bmi
+- mean_sbp
+- diabetes
+- total_cholesterol
+- hdl_cholesterol
+- siri
+model4_combined:
+- age
+- sex
+- race_ethnicity
+- education
+- smoking
+- bmi
+- mean_sbp
+- diabetes
+- total_cholesterol
+- hdl_cholesterol
+- egfr
+- log2_uacr
+- tyg_wc
+- siri
+alternative_core_sensitivity: replace bmi with waist; do not choose based on performance
+excluded_from_main:
+- CRP
+- GBD variables
+- outcome component variables
+- SHAP-selected variables

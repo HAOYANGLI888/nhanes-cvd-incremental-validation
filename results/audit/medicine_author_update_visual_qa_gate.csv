@@ -1,0 +1,13 @@
+check,status,evidence
+all_11_word_artifacts_rendered,PASS,"Render manifest contains 11 Word artifacts"
+all_57_pages_reviewed,PASS,"18+1+2+3+26+1+2+1+1+1+1 = 57 pages"
+main_manuscript_18_pages,PASS,"Title page, manuscript body, declarations, references, and legends reviewed"
+author_order_and_equal_contribution_visible,PASS,"Page 1 identifies Haoyang Li and Xiang Li as equal-contributing co-first authors"
+corresponding_author_visible,PASS,"Page 1 identifies Xuefeng Shi as corresponding author"
+funding_and_conflict_text_visible,PASS,"Page 16 renders the Chinese program name, document number, and no-conflicts statement without missing glyphs"
+cover_letter_clean,PASS,"One page; author, funding, conflict, and signature fields are legible"
+checklists_clean,PASS,"STROBE pages 1-2 and TRIPOD+AI pages 1-3 reviewed"
+supplemental_content_clean,PASS,"SDC1 pages 1-26 and SDC2 page 1 reviewed"
+separate_tables_clean,PASS,"Table 1 pages 1-2 and Tables 2-5 page 1 reviewed"
+no_clipping_overlap_or_unintended_blank_pages,PASS,"No clipping, overlap, missing glyphs, or unintended blank pages observed"
+overall,PASS,"Author-updated Medicine Word package visually cleared"

@@ -1,0 +1,35 @@
+Characteristic,Development 2005-2018: No CVD,Development 2005-2018: CVD,Temporal 2021-2023: No CVD,Temporal 2021-2023: CVD
+MEC examination sample,,,,
+Unweighted n,"33,260","4,222","6,784",982
+"Age, years",45.9 (16.3),65.0 (13.4),47.1 (16.9),65.9 (12.1)
+"Female, %",51.8,46.1,51.9,43.9
+"Race/ethnicity: Mexican American, %",8.8,4.6,7.5,4.0
+"Race/ethnicity: Other Hispanic, %",5.8,3.5,9.7,7.7
+"Race/ethnicity: Non-Hispanic White, %",66.3,73.1,59.3,67.8
+"Race/ethnicity: Non-Hispanic Black, %",11.3,12.1,11.0,10.6
+"Race/ethnicity: Non-Hispanic Asian, %",3.4,1.7,6.5,3.0
+"Race/ethnicity: Other/Multi, %",4.5,5.0,6.1,6.9
+"Education: <9th grade, %",5.3,9.8,3.5,6.5
+"Education: 9-11th grade, %",10.3,14.4,5.7,12.6
+"Education: High school/GED, %",23.0,27.3,25.6,32.9
+"Education: Some college/AA, %",31.4,29.1,29.5,29.6
+"Education: College graduate+, %",30.0,19.4,35.6,18.4
+"Education missing, %",0.1,0.0,0.0,0.0
+"Smoking: Never, %",56.5,39.5,64.3,39.1
+"Smoking: Former, %",23.1,39.0,21.7,39.5
+"Smoking: Current, %",20.3,21.5,13.9,21.4
+"Smoking missing, %",0.0,0.0,0.1,0.0
+"Body mass index, kg/m2",28.9 (6.8),30.6 (7.2),29.5 (7.3),31.4 (7.7)
+"Systolic blood pressure, mm Hg",121.8 (16.9),130.0 (20.9),120.6 (16.5),127.3 (21.2)
+"Diabetes, %",10.6,36.5,12.3,41.0
+"Total cholesterol, mg/dL",195.1 (40.7),180.1 (45.0),190.1 (40.9),170.6 (49.0)
+"HDL cholesterol, mg/dL",53.7 (16.4),50.5 (16.3),53.9 (14.5),50.9 (13.8)
+"eGFR, mL/min/1.73 m2",97.2 (19.9),76.3 (23.4),97.0 (19.7),77.3 (22.2)
+"UACR, mg/g",6.4 (4.3-11.3),10.8 (5.9-29.1),7.2 (4.8-12.5),12.6 (6.8-36.3)
+SIRI,1.03 (0.72-1.48),1.33 (0.90-2.00),0.98 (0.68-1.46),1.37 (0.89-2.10)
+Fasting subsample,,,,
+Unweighted fasting n,"14,143","1,813","2,963",434
+"Waist circumference, cm",98.5 (16.4),106.1 (16.5),99.6 (16.8),107.4 (16.0)
+"Fasting glucose, mg/dL",105.1 (28.9),120.6 (42.4),107.2 (34.4),123.4 (38.9)
+"Triglycerides, mg/dL",100.0 (68.0-147.0),115.0 (81.0-167.0),80.8 (54.3-121.9),96.5 (70.0-138.5)
+TyG-WC,833.5 (715.4-957.5),923.4 (806.9-1059.3),818.6 (705.2-956.2),932.2 (822.0-1055.3)

@@ -1,0 +1,31 @@
+model: XGBoost binary logistic
+random_seed: 20260713
+scale_pos_weight_main: 1
+scale_pos_weight_sensitivity: training_negatives / training_positives within each
+  training fold
+max_depth:
+- 2
+- 3
+min_child_weight:
+- 1
+- 5
+learning_rate:
+- 0.03
+- 0.1
+n_estimators:
+- 200
+- 500
+subsample:
+- 0.8
+- 1.0
+colsample_bytree:
+- 0.8
+- 1.0
+reg_alpha:
+- 0
+- 0.1
+reg_lambda:
+- 1
+- 5
+early_stopping: inner-cycle validation only; never use outer holdout or 2021-2023
+selection_metric: weighted_log_loss

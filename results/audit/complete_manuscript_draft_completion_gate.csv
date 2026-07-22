@@ -1,0 +1,17 @@
+check,status
+docx_exists,PASS
+markdown_source_exists,PASS
+required_sections_present,PASS
+all_eight_tables_embedded,PASS
+all_five_figures_embedded,PASS
+stage3b_explicitly_locked,PASS
+pilot_results_absent,PASS
+gbd_removed_from_manuscript,PASS
+no_future_event_claim,PASS
+author_metadata_not_invented,PASS
+minimum_manuscript_words,PASS
+correct_2021_egfr_reference,PASS
+final_visual_qa_25_pages,PASS
+no_footer_duplication,PASS
+no_clipping_or_overlap,PASS
+overall,PASS

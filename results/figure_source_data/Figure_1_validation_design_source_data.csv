@@ -1,0 +1,6 @@
+stage,title,detail,status
+Development,Seven NHANES cycles,2005-2006 through 2017-2018,development data
+Validation,Leave one cycle out,Train/tune on six; validate on one,no held-out leakage
+Models,Locked Models 0-4,"Clinical, renal, metabolic, inflammatory, combined",fixed predictors
+Inference,Post-validation inference,"Survey CI, sensitivities, meta-analysis, DCA",completed
+Temporal test,NHANES 2021-2023,Locked and not evaluated,locked

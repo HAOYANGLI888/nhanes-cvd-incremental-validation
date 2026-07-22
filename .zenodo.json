@@ -1,0 +1,16 @@
+{
+  "title": "NHANES CVD incremental validation reproducibility archive",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "publication_date": "2026-07-22",
+  "access_right": "open",
+  "license": "other-open",
+  "language": "eng",
+  "description": "Analytical code, locked configurations and protocols, frozen model objects, aggregate results, audit gates, and figure source data for repeated cross-sectional and temporal validation of renal, metabolic, and inflammatory markers for prevalent self-reported cardiovascular disease in NHANES. Code and model objects are MIT licensed; documentation and aggregate outputs are CC BY 4.0 licensed. No individual-level NHANES data or prediction files are included.",
+  "creators": [
+    {"name": "Li, Haoyang", "affiliation": "Qinghai University Affiliated Hospital", "orcid": "0009-0006-0399-9464"},
+    {"name": "Li, Xiang", "affiliation": "Qinghai University Affiliated Hospital", "orcid": "0009-0008-7853-5415"},
+    {"name": "Shi, Xuefeng", "affiliation": "Qinghai Provincial People's Hospital", "orcid": "0000-0002-4694-8759"}
+  ],
+  "keywords": ["NHANES", "cardiovascular disease", "temporal validation", "albuminuria", "elastic net", "XGBoost"]
+}

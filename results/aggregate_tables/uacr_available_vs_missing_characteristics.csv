@@ -1,0 +1,15 @@
+group,characteristic,statistic,value
+Missing,n,unweighted count,4404.0
+Missing,age,weighted mean,51.980391098055065
+Missing,bmi,weighted mean,29.252838105084095
+Missing,egfr,weighted mean,82.53232845208775
+Missing,cvd,weighted proportion,0.20192655016765335
+Missing,diabetes,weighted proportion,0.18247423736412927
+Missing,hypertension,weighted proportion,0.4985125548881012
+Observed,n,unweighted count,42405.0
+Observed,age,weighted mean,48.231519668137786
+Observed,bmi,weighted mean,29.358372445851725
+Observed,egfr,weighted mean,95.40244119490357
+Observed,cvd,weighted proportion,0.09007367739493252
+Observed,diabetes,weighted proportion,0.13912231640217393
+Observed,hypertension,weighted proportion,0.5028556945637738

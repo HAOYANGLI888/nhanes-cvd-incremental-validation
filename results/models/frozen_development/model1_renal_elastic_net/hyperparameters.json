@@ -1,0 +1,8 @@
+{
+  "C": 0.001,
+  "class_weight": null,
+  "l1_ratio": 0.0,
+  "max_iter": 5000,
+  "solver": "saga",
+  "tol": 0.0001
+}

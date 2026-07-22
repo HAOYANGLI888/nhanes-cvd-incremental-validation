@@ -1,0 +1,67 @@
+outer_validation:
+- fold: 1
+  holdout_cycle: 2005-2006
+  training_cycles:
+  - 2007-2008
+  - 2009-2010
+  - 2011-2012
+  - 2013-2014
+  - 2015-2016
+  - 2017-2018
+- fold: 2
+  holdout_cycle: 2007-2008
+  training_cycles:
+  - 2005-2006
+  - 2009-2010
+  - 2011-2012
+  - 2013-2014
+  - 2015-2016
+  - 2017-2018
+- fold: 3
+  holdout_cycle: 2009-2010
+  training_cycles:
+  - 2005-2006
+  - 2007-2008
+  - 2011-2012
+  - 2013-2014
+  - 2015-2016
+  - 2017-2018
+- fold: 4
+  holdout_cycle: 2011-2012
+  training_cycles:
+  - 2005-2006
+  - 2007-2008
+  - 2009-2010
+  - 2013-2014
+  - 2015-2016
+  - 2017-2018
+- fold: 5
+  holdout_cycle: 2013-2014
+  training_cycles:
+  - 2005-2006
+  - 2007-2008
+  - 2009-2010
+  - 2011-2012
+  - 2015-2016
+  - 2017-2018
+- fold: 6
+  holdout_cycle: 2015-2016
+  training_cycles:
+  - 2005-2006
+  - 2007-2008
+  - 2009-2010
+  - 2011-2012
+  - 2013-2014
+  - 2017-2018
+- fold: 7
+  holdout_cycle: 2017-2018
+  training_cycles:
+  - 2005-2006
+  - 2007-2008
+  - 2009-2010
+  - 2011-2012
+  - 2013-2014
+  - 2015-2016
+inner_validation: leave-one-training-cycle-out within each outer training set
+primary_tuning_metric: weighted_log_loss
+secondary_metric: weighted_brier_score

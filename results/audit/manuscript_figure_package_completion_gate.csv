@@ -1,0 +1,10 @@
+check,status
+all_20_figure_exports_present,PASS
+five_figure_source_packages_present,PASS
+editable_svg_text_present,PASS
+captions_present,PASS
+visual_qa_completed_at_final_size,PASS
+forbidden_cycle_performance_absent,PASS
+primary_algorithm_is_elastic_net,PASS
+stage3b_status_locked_not_evaluated,PASS
+overall,PASS

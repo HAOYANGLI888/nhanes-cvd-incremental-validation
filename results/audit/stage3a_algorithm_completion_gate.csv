@@ -1,0 +1,3 @@
+algorithm,status,algorithm_gate,outer_status,outer_tasks_completed,outer_tasks_expected,outer_task_fraction,completed_frozen_models,expected_frozen_models,frozen_model_fraction,outer_candidate_counts,frozen_candidate_counts,locked_full_grid_candidate_count,candidate_limit,outer_candidate_limits_absent,all_frozen_candidate_limits_absent,all_candidate_limits_absent,all_frozen_checkpoint_compatibility_pass,frozen_analysis_semantics_pass
+elastic_net,PASS,PASS,PASS,49,49,49/49,5,5,5/5,45,45,45,,True,True,True,True,True
+xgboost,PASS,PASS,PASS,49,49,49/49,5,5,5/5,256,256,256,,True,True,True,True,True

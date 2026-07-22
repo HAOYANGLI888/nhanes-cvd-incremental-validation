@@ -1,0 +1,18 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Haoyang Li, Xiang Li, and Xuefeng Shi
+
+Documentation, protocols, aggregate result tables, audit records, and figure
+source data in this repository are licensed under the Creative Commons
+Attribution 4.0 International License.
+
+You are free to share and adapt these materials for any purpose, including
+commercially, provided appropriate credit is given, a link to the license is
+provided, and changes are indicated. No additional legal or technological
+restrictions may be applied.
+
+License deed: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This license does not apply to source NHANES participant-level data, which are
+not redistributed in this repository.

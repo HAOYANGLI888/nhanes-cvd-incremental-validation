@@ -1,0 +1,79 @@
+{
+  "algorithm": "elastic_net",
+  "calibration_status": "none",
+  "config_hash": {
+    "config/cycle_folds.yml": "83989a1e6d8482f886ad95fae273aad3a7017a463d085f3c68923110a1cde427",
+    "config/elastic_net_hyperparameter_grid.yml": "369ef395cc6e675b3916c743deb4af4d89cdfd7b28323cefaa2c76f002844941",
+    "config/frozen_variable_specification.yml": "81ece6c7a190957024d3a0b87a06249e6b07d2aee86a4f6f5463f066888d0208",
+    "config/temporal_validation_locked.yml": "6883ae0bb61c41c80eeba2523361b8cddc0babef6793e94b4b9a2449c30491ba",
+    "config/xgboost_hyperparameter_grid.yml": "bd77bebd7233cb643bb0ab622229eaa0ee797d43cc6e108a742156ea7057421d"
+  },
+  "creation_timestamp": "2026-07-14T05:39:01",
+  "events_training": 4222,
+  "mean_inner_weighted_log_loss": 0.226423770605174,
+  "model": "model0_core",
+  "model_hash": "2d78e7691f32ea2b4f151cd870c88643a87a7ad646587540ac2dc5983a729e2c",
+  "n_training": 37482,
+  "resume_signature": {
+    "algorithm": "elastic_net",
+    "candidate_count": 45,
+    "candidate_grid_hash": "4e207eaa157ca05522420e5fb36a97e7ba0f95c6fdeeeb7bb077cf1ab1ef26ca",
+    "candidate_limit": null,
+    "checkpoint_type": "frozen_development_task",
+    "code_hash": "bc3c3ca06ec5734b00025f70c6e88a5ab2021a5381affd1031bc6afe555dfbe9",
+    "config_hashes": {
+      "config/cycle_folds.yml": "83989a1e6d8482f886ad95fae273aad3a7017a463d085f3c68923110a1cde427",
+      "config/elastic_net_hyperparameter_grid.yml": "369ef395cc6e675b3916c743deb4af4d89cdfd7b28323cefaa2c76f002844941",
+      "config/frozen_variable_specification.yml": "81ece6c7a190957024d3a0b87a06249e6b07d2aee86a4f6f5463f066888d0208",
+      "config/temporal_validation_locked.yml": "6883ae0bb61c41c80eeba2523361b8cddc0babef6793e94b4b9a2449c30491ba",
+      "config/xgboost_hyperparameter_grid.yml": "bd77bebd7233cb643bb0ab622229eaa0ee797d43cc6e108a742156ea7057421d"
+    },
+    "development_cycles": [
+      "2005-2006",
+      "2007-2008",
+      "2009-2010",
+      "2011-2012",
+      "2013-2014",
+      "2015-2016",
+      "2017-2018"
+    ],
+    "features": [
+      "age",
+      "sex",
+      "race_ethnicity",
+      "education",
+      "smoking",
+      "bmi",
+      "mean_sbp",
+      "diabetes",
+      "total_cholesterol",
+      "hdl_cholesterol"
+    ],
+    "input_hash": "add4c33fcca427a83f3bebbb55bde4112b1a7b94bd270faca536259cd750fdfa",
+    "model": "model0_core",
+    "random_seed": 20260713,
+    "schema_version": 1,
+    "training_cycles": [
+      "2005-2006",
+      "2007-2008",
+      "2009-2010",
+      "2011-2012",
+      "2013-2014",
+      "2015-2016",
+      "2017-2018"
+    ]
+  },
+  "sd_inner_weighted_log_loss": 0.007660843955186645,
+  "selected_candidate_id": "elastic_net_0001",
+  "software": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7",
+    "sklearn": "1.8.0",
+    "xgboost": "3.2.0"
+  },
+  "temporal_validation_status": "locked",
+  "training_period": "NHANES 2005-2018",
+  "weight_variable": "combined_mec_weight"
+}

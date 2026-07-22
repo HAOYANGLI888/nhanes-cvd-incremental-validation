@@ -1,0 +1,10 @@
+check,status
+all_11_docx_rendered,PASS
+all_41_pages_reviewed,PASS
+main_manuscript_18_pages_complete,PASS
+no_clipping_overlap_or_illegible_content,PASS
+headings_render_black,PASS
+five_600dpi_rgb_main_figures_reviewed,PASS
+redundant_figure_titles_and_footer_legends_removed,PASS
+obsolete_locked_status_figure_absent,PASS
+overall,PASS

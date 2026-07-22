@@ -1,0 +1,12 @@
+check,status,evidence
+all_11_word_artifacts_rendered,PASS,"Render manifest contains 11 Word artifacts"
+all_57_pages_reviewed,PASS,"18+1+2+3+26+1+2+1+1+1+1 = 57 pages"
+main_manuscript_18_pages,PASS,"Final exact manuscript rendered to 18 pages"
+title_page_author_information_clean,PASS,"Names, master's-student status, Xuefeng Shi's PhD, affiliations, emails, ORCID iDs, corresponding address, telephone, and equal-contribution statement are legible on page 1"
+declarations_clean,PASS,"CRediT roles, funding, funder role, conflicts, acknowledgments placeholder, and AI disclosure placeholder are legible on pages 15-16"
+cover_letter_clean,PASS,"One page; funder role and complete corresponding-author signature block are legible"
+unchanged_pages_regression_check,PASS,"55 of 57 rendered pages are byte-identical to the preceding visually cleared release"
+changed_pages_reviewed_at_original_detail,PASS,"Manuscript page 1 and cover-letter page 1 reviewed at original detail"
+no_clipping_overlap_or_missing_glyphs,PASS,"No clipping, overlap, missing glyphs, or unintended blank pages observed"
+privacy_screen_pass,PASS,"Passwords, dates of birth, and other non-submission workbook fields are absent from the package"
+overall,PASS,"Full-author-information Medicine Word package visually cleared"

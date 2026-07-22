@@ -1,0 +1,2 @@
+module,status,algorithm,periods,bootstrap_replicates,minimum_valid_replicate_fraction
+strict_cvd_outcome_definition_sensitivity,PASS,elastic_net,2,2000,1.0

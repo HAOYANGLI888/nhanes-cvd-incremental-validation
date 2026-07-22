@@ -1,0 +1,25 @@
+model: Elastic Net logistic regression
+random_seed: 20260713
+class_weight_main: null
+class_weight_sensitivity: balanced
+solver: saga
+max_iter: 5000
+tol: 0.0001
+standardization: fit within training fold only
+l1_ratio:
+- 0.0
+- 0.25
+- 0.5
+- 0.75
+- 1.0
+C:
+- 0.001
+- 0.003
+- 0.01
+- 0.03
+- 0.1
+- 0.3
+- 1.0
+- 3.0
+- 10.0
+selection_metric: weighted_log_loss

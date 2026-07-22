@@ -1,0 +1,2 @@
+module,status,groups_completed,groups_expected,rows_completed,rows_expected,thresholds,threshold_range,survey_replicates,paired_samples_and_weights,forbidden_cycle_absent,signature_hash
+survey_weighted_decision_curve_analysis,PASS,64,64,9600,9600,30,0.01-0.30,2000,True,True,b6830b1d74ff6d0d6f0108fde93880e30a692acd431567307493bef7ef919c01

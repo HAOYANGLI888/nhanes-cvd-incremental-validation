@@ -1,0 +1,24 @@
+{
+  "analysis_version": "survey_ci_locked_v1",
+  "ci_level": 0.95,
+  "ci_method": "percentile",
+  "code_hash": "e65c5fc69d68375ab63caa7fa71809a6fd3a5d73bd619f6abd09a8484568dec4",
+  "config_hash": "8d63499b94e767b46d5826a981bc37107a27bc39cba75538af6b08fd1d67f823",
+  "input_hashes": {
+    "config/survey_bootstrap_locked.yml": "8d63499b94e767b46d5826a981bc37107a27bc39cba75538af6b08fd1d67f823",
+    "results/audit/stage3a_algorithm_completion_gate.csv": "76842a9ea31cfcc9f3420437b5e1428f07a50a9adedf4b2e0cde29ebf1cfe3b1",
+    "results/predictions/stage3a_outer_predictions.csv": "fee178deea52f684ddaab3603776c3944538082b9d74d5501759a98b0f0ffc9d",
+    "results/tables/cycle_specific_incremental_value.csv": "9a09aebb269d436370a3d780f1b35f2b81314a4a6733112d89536072f27b7c58",
+    "results/tables/cycle_specific_model_performance.csv": "505923e66724dab1ec114cc001b622fc95ea3791e22dd6317a2719847e269056",
+    "results/tables/pooled_incremental_value.csv": "b779bad2cbb616e6462904db2a688cc7dd31e5e989f8da490020d009107e84ac",
+    "results/tables/pooled_out_of_cycle_performance.csv": "cafaa263af9b5cc3fc803cb927f7799b7e3a272032223c2add0745c1c53fef7a"
+  },
+  "method": "rao_wu_rescaled_bootstrap",
+  "numpy": "1.26.4",
+  "pandas": "2.3.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.7",
+  "replicates": 2000,
+  "seed": 20260715,
+  "signature_hash": "051ad0a7a2873211aa21a6cc4bab73247ee807f8f7f280b8179fa139621e9ae8"
+}

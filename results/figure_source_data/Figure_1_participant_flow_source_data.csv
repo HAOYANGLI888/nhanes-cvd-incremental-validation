@@ -1,0 +1,15 @@
+period,step,included_n,excluded_since_previous,cvd_events
+Development 2005-2018,Public-use examination records,70190,,
+Development 2005-2018,Age 20 years or older,39749,30441,
+Development 2005-2018,Not pregnant under locked rule,39041,708,
+Development 2005-2018,Ascertainable self-reported CVD,39033,8,4441
+Development 2005-2018,Valid masked stratum and PSU,39033,0,4441
+Development 2005-2018,Final MEC analysis sample,37482,1551,4222
+Development 2005-2018,Final fasting analysis sample,15956,23077,1813
+Temporal 2021-2023,Public-use examination records,11933,,
+Temporal 2021-2023,Age 20 years or older,7809,4124,
+Temporal 2021-2023,Not pregnant under locked rule,7768,41,
+Temporal 2021-2023,Ascertainable self-reported CVD,7766,2,982
+Temporal 2021-2023,Valid masked stratum and PSU,7766,0,982
+Temporal 2021-2023,Final MEC analysis sample,7766,0,982
+Temporal 2021-2023,Final fasting analysis sample,3397,4369,434

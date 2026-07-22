@@ -1,0 +1,13 @@
+[
+  "age",
+  "sex",
+  "race_ethnicity",
+  "education",
+  "smoking",
+  "bmi",
+  "mean_sbp",
+  "diabetes",
+  "total_cholesterol",
+  "hdl_cholesterol",
+  "siri"
+]

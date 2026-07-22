@@ -1,0 +1,115 @@
+analysis_version: post_stage3a_locked_v1
+development_cycles:
+  - 2005-2006
+  - 2007-2008
+  - 2009-2010
+  - 2011-2012
+  - 2013-2014
+  - 2015-2016
+  - 2017-2018
+forbidden_cycles:
+  - 2021-2023
+random_seed: 20260715
+uacr:
+  comparisons:
+    renal:
+      core_model: model0_core
+      extended_model: model1_renal
+    combined:
+      core_model: model0_paired_combined
+      extended_model: model4_combined
+  algorithms:
+    - elastic_net
+    - xgboost
+  methods:
+    - main_fold_median
+    - nested_multiple_imputation
+    - complete_case_refit
+    - stabilized_ipw_complete_case
+  multiple_imputations: 20
+  imputer: iterative_bayesian_ridge_posterior_draw
+  imputer_max_iter: 10
+  auxiliary_continuous:
+    - log2_uacr
+    - age
+    - bmi
+    - mean_sbp
+    - total_cholesterol
+    - hdl_cholesterol
+    - egfr
+    - tyg_wc
+    - siri
+  auxiliary_categorical:
+    - sex
+    - race_ethnicity
+    - education
+    - smoking
+    - diabetes
+  include_outcome_in_imputer: false
+  hyperparameters: fixed_from_main_outer_training_nested_cv
+  propensity_model: l2_logistic_regression
+  propensity_C: 1.0
+  propensity_clip_lower: 0.05
+  propensity_clip_upper: 0.995
+  stabilized_weight_upper_quantile: 0.99
+  propensity_predictors: model_specific_features_excluding_log2_uacr
+class_imbalance:
+  models:
+    - model0_core
+    - model1_renal
+    - model2_metabolic
+    - model3_inflammatory
+    - model4_combined
+    - model0_paired_metabolic
+    - model0_paired_combined
+  algorithms:
+    - elastic_net
+    - xgboost
+  elastic_net_rule: training_count_balanced_class_weights
+  xgboost_rule: training_negatives_divided_by_training_positives
+  hyperparameters: fixed_from_main_outer_training_nested_cv
+  resampling: none
+meta_analysis:
+  metrics:
+    - delta_AUROC
+    - delta_PR_AUC
+    - delta_Brier_improvement
+    - delta_log_loss_improvement
+  between_cycle_variance: REML
+  confidence_interval: modified_Hartung_Knapp
+  ci_level: 0.95
+  minimum_cycles: 3
+dca:
+  comparisons:
+    renal:
+      core_model: model0_core
+      extended_model: model1_renal
+    metabolic:
+      core_model: model0_paired_metabolic
+      extended_model: model2_metabolic
+    inflammatory:
+      core_model: model0_core
+      extended_model: model3_inflammatory
+    combined:
+      core_model: model0_paired_combined
+      extended_model: model4_combined
+  algorithms:
+    - elastic_net
+    - xgboost
+  threshold_start: 0.01
+  threshold_stop: 0.30
+  threshold_step: 0.01
+  survey_replicates: 2000
+  survey_seed: 20260715
+  ci_level: 0.95
+  ci_method: percentile
+  strategies:
+    - core_model
+    - extended_model
+    - treat_all
+    - treat_none
+    - extended_minus_core
+final_freeze:
+  expected_models: 10
+  main_model_selection_must_not_change: true
+  require_all_module_gates_pass: true

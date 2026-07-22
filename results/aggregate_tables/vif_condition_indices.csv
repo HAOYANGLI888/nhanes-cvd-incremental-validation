@@ -1,0 +1,12 @@
+variable,vif,n_complete,note
+bmi,5.748652220609357,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+waist,29.03105068903067,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+tyg_wc,31.8163212067946,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+triglycerides_harmonized,2.9412586720648872,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+fasting_glucose,2.271855820433701,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+diabetes,1.8130775232826353,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+total_cholesterol,1.446713744287971,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+hdl_cholesterol,1.7236092814732773,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+egfr,2.0064240045429904,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+serum_creatinine,1.9717576296959656,15909,Exploratory collinearity audit only; no outcome-driven deletion.
+uacr,1.1148954727147249,15909,Exploratory collinearity audit only; no outcome-driven deletion.

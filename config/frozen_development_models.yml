@@ -1,0 +1,53 @@
+created: '2026-07-15T15:27:37'
+training_period: NHANES 2005-2018
+models:
+  model0_core_elastic_net:
+    artifact: results\models\frozen_development\model0_core_elastic_net\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model0_core_elastic_net\feature_list.json
+    metadata: results\models\frozen_development\model0_core_elastic_net\training_metadata.json
+    model_hash: 2d78e7691f32ea2b4f151cd870c88643a87a7ad646587540ac2dc5983a729e2c
+  model1_renal_elastic_net:
+    artifact: results\models\frozen_development\model1_renal_elastic_net\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model1_renal_elastic_net\feature_list.json
+    metadata: results\models\frozen_development\model1_renal_elastic_net\training_metadata.json
+    model_hash: 19b52b6d3b9418e2862a289de908540601cb0c0cafbdd277f9b72d01f1e1b6c4
+  model2_metabolic_elastic_net:
+    artifact: results\models\frozen_development\model2_metabolic_elastic_net\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model2_metabolic_elastic_net\feature_list.json
+    metadata: results\models\frozen_development\model2_metabolic_elastic_net\training_metadata.json
+    model_hash: 905b92bc4074e8c264917dee084dcb6309b168a4f4f58e83c09560df2e7a2c77
+  model3_inflammatory_elastic_net:
+    artifact: results\models\frozen_development\model3_inflammatory_elastic_net\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model3_inflammatory_elastic_net\feature_list.json
+    metadata: results\models\frozen_development\model3_inflammatory_elastic_net\training_metadata.json
+    model_hash: cc8418be665c49b6642617317d81f42468379652b20fe7135d066d8fb11aa4bc
+  model4_combined_elastic_net:
+    artifact: results\models\frozen_development\model4_combined_elastic_net\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model4_combined_elastic_net\feature_list.json
+    metadata: results\models\frozen_development\model4_combined_elastic_net\training_metadata.json
+    model_hash: 9c0c2295e2aadb40964bdf12d8e4dee6a7408f2a78296a514ba8dfa3b52f3230
+  model0_core_xgboost:
+    artifact: results\models\frozen_development\model0_core_xgboost\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model0_core_xgboost\feature_list.json
+    metadata: results\models\frozen_development\model0_core_xgboost\training_metadata.json
+    model_hash: 9f538da99aedc06121e2df7bb12259b534f8e973d1b378a91dfe158b689eae43
+  model1_renal_xgboost:
+    artifact: results\models\frozen_development\model1_renal_xgboost\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model1_renal_xgboost\feature_list.json
+    metadata: results\models\frozen_development\model1_renal_xgboost\training_metadata.json
+    model_hash: 3632013712a5f4cb740802517e24f7f57cfd9de7a026ad69676d3d5000508685
+  model2_metabolic_xgboost:
+    artifact: results\models\frozen_development\model2_metabolic_xgboost\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model2_metabolic_xgboost\feature_list.json
+    metadata: results\models\frozen_development\model2_metabolic_xgboost\training_metadata.json
+    model_hash: 6ab55703d69698d2d3a9a680eb9a889c8a8d9eb1fc5b9343859d93fe4e48b754
+  model3_inflammatory_xgboost:
+    artifact: results\models\frozen_development\model3_inflammatory_xgboost\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model3_inflammatory_xgboost\feature_list.json
+    metadata: results\models\frozen_development\model3_inflammatory_xgboost\training_metadata.json
+    model_hash: 51e3cb9a96dd05f2ee2d35f87f82f3bacd3cf3edfc5971bec63fe9c3536755d1
+  model4_combined_xgboost:
+    artifact: results\models\frozen_development\model4_combined_xgboost\model_pipeline.joblib
+    feature_list: results\models\frozen_development\model4_combined_xgboost\feature_list.json
+    metadata: results\models\frozen_development\model4_combined_xgboost\training_metadata.json
+    model_hash: 6659efbbef2a4a53ee7ec12a44b8bf37f8aa8921200c0a9ee251507e7f5fd6d5

@@ -1,0 +1,10 @@
+check,status,detail
+all_expected_word_artifacts_rendered,PASS,"11/11 DOCX files converted to PDF and PNG"
+all_rendered_pages_present,PASS,"57/57 pages present"
+main_manuscript_layout,PASS,"18 pages; complete final legends page; no unintended trailing page"
+cover_letter_layout,PASS,"1 page; no clipping or overlap"
+reporting_maps_layout,PASS,"STROBE 2 pages and TRIPOD+AI 3 pages; tables fit page bounds"
+supplemental_content_layout,PASS,"Tables S1-S11 26 pages and Figure S1 1 page; no clipping or overlap"
+separate_tables_layout,PASS,"Tables 1-5 rendered to 6 pages; no clipping or overlap"
+missing_glyphs_or_corruption,PASS,"None observed during page-by-page inspection"
+overall,PASS,"Exact final release visually approved"

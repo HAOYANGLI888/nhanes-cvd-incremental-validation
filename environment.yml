@@ -1,0 +1,21 @@
+name: cvd-nhanes-incremental-validation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - scikit-learn
+  - scipy
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - xgboost
+  - pyreadstat
+  - openpyxl
+  - python-docx
+  - pyyaml
+  - r-base
+  - r-survey
+  - r-tidyverse
+  - r-splines

@@ -1,0 +1,74 @@
+analysis_version: stage3b_locked_v1
+authorization_status: AUTHORIZED
+authorization_date: '2026-07-20'
+external_cycle: 2021-2023
+training_period: NHANES 2005-2018
+algorithms:
+- elastic_net
+- xgboost
+models:
+- model0_core
+- model1_renal
+- model2_metabolic
+- model3_inflammatory
+- model4_combined
+comparisons:
+  renal: [model0_core, model1_renal]
+  metabolic: [model0_paired_metabolic, model2_metabolic]
+  inflammatory: [model0_core, model3_inflammatory]
+  combined: [model0_paired_combined, model4_combined]
+sample_domains:
+  model0_core: mec
+  model1_renal: mec
+  model2_metabolic: fasting
+  model3_inflammatory: mec
+  model4_combined: fasting
+  model0_paired_metabolic: fasting
+  model0_paired_combined: fasting
+weights:
+  mec: combined_mec_weight
+  fasting: combined_fasting_weight
+eligibility: age >= 20, not pregnant, observed prevalent self-reported CVD, valid masked stratum and PSU, positive domain weight
+prediction_rule: Apply the ten frozen development pipelines without fitting any preprocessing or model component.
+probability_clip: [1.0e-8, 0.99999999]
+performance_metrics:
+- survey_weighted_AUROC
+- survey_weighted_PR_AUC
+- weighted_Brier
+- weighted_log_loss
+- calibration_intercept
+- calibration_slope
+- observed_expected_ratio
+- weighted_observed_prevalence
+- weighted_mean_predicted_probability
+- calibration_in_the_large
+incremental_metrics:
+- delta_AUROC
+- delta_PR_AUC
+- delta_Brier_improvement
+- delta_log_loss_improvement
+- core_calibration_intercept
+- extended_calibration_intercept
+- core_calibration_slope
+- extended_calibration_slope
+- absolute_intercept_deviation_change
+- absolute_slope_deviation_change
+uncertainty:
+  method: rao_wu_rescaled_bootstrap
+  replicates: 2000
+  seed: 20260720
+  batch_size: 50
+  ci_level: 0.95
+  ci_method: percentile
+  minimum_valid_replicate_fraction: 0.95
+paired_incremental_rule: Identical participants, identical replicate factors, and the extended-model domain weight within each comparison.
+forbidden_actions:
+- model_refit
+- hyperparameter_tuning
+- feature_selection
+- missing_strategy_selection
+- feature_transformation_fitting
+- model_recalibration
+- threshold_selection
+- model_updating_after_results
+- SMOTE

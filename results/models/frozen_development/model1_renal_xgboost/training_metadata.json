@@ -1,0 +1,90 @@
+{
+  "algorithm": "xgboost",
+  "calibration_status": "none",
+  "config_hash": {
+    "config/cycle_folds.yml": "83989a1e6d8482f886ad95fae273aad3a7017a463d085f3c68923110a1cde427",
+    "config/elastic_net_hyperparameter_grid.yml": "369ef395cc6e675b3916c743deb4af4d89cdfd7b28323cefaa2c76f002844941",
+    "config/frozen_variable_specification.yml": "81ece6c7a190957024d3a0b87a06249e6b07d2aee86a4f6f5463f066888d0208",
+    "config/temporal_validation_locked.yml": "6883ae0bb61c41c80eeba2523361b8cddc0babef6793e94b4b9a2449c30491ba",
+    "config/xgboost_hyperparameter_grid.yml": "bd77bebd7233cb643bb0ab622229eaa0ee797d43cc6e108a742156ea7057421d"
+  },
+  "creation_timestamp": "2026-07-15T15:35:08",
+  "events_training": 4222,
+  "mean_inner_weighted_log_loss": 0.22208199337120038,
+  "model": "model1_renal",
+  "model_hash": "3632013712a5f4cb740802517e24f7f57cfd9de7a026ad69676d3d5000508685",
+  "n_training": 37482,
+  "resume_signature": {
+    "algorithm": "xgboost",
+    "analysis_semantics_hash": "899bfd2c4538a6bd53520b40454a84db5cf4c899f9dd687566f3dc4ce019a6c1",
+    "analysis_semantics_version": "stage3a_locked_v1",
+    "analysis_software": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "python": "3.12.7",
+      "sklearn": "1.8.0",
+      "xgboost": "3.2.0"
+    },
+    "candidate_count": 256,
+    "candidate_grid_hash": "2bebeffb35b95ebeb1490e0b2372d31b97f4a3a23b4d6136f91712ca02f76e76",
+    "candidate_limit": null,
+    "checkpoint_type": "frozen_development_task",
+    "code_hash": "1bf104ff3c4fcc04420a258046dadfb52dd451b2fb7d267e0e0ba51ec9bbd746",
+    "config_hashes": {
+      "config/cycle_folds.yml": "83989a1e6d8482f886ad95fae273aad3a7017a463d085f3c68923110a1cde427",
+      "config/elastic_net_hyperparameter_grid.yml": "369ef395cc6e675b3916c743deb4af4d89cdfd7b28323cefaa2c76f002844941",
+      "config/frozen_variable_specification.yml": "81ece6c7a190957024d3a0b87a06249e6b07d2aee86a4f6f5463f066888d0208",
+      "config/temporal_validation_locked.yml": "6883ae0bb61c41c80eeba2523361b8cddc0babef6793e94b4b9a2449c30491ba",
+      "config/xgboost_hyperparameter_grid.yml": "bd77bebd7233cb643bb0ab622229eaa0ee797d43cc6e108a742156ea7057421d"
+    },
+    "development_cycles": [
+      "2005-2006",
+      "2007-2008",
+      "2009-2010",
+      "2011-2012",
+      "2013-2014",
+      "2015-2016",
+      "2017-2018"
+    ],
+    "features": [
+      "age",
+      "sex",
+      "race_ethnicity",
+      "education",
+      "smoking",
+      "bmi",
+      "mean_sbp",
+      "diabetes",
+      "total_cholesterol",
+      "hdl_cholesterol",
+      "egfr",
+      "log2_uacr"
+    ],
+    "input_hash": "add4c33fcca427a83f3bebbb55bde4112b1a7b94bd270faca536259cd750fdfa",
+    "model": "model1_renal",
+    "random_seed": 20260713,
+    "schema_version": 1,
+    "training_cycles": [
+      "2005-2006",
+      "2007-2008",
+      "2009-2010",
+      "2011-2012",
+      "2013-2014",
+      "2015-2016",
+      "2017-2018"
+    ]
+  },
+  "sd_inner_weighted_log_loss": 0.009398137768236389,
+  "selected_candidate_id": "xgboost_0032",
+  "software": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7",
+    "sklearn": "1.8.0",
+    "xgboost": "3.2.0"
+  },
+  "temporal_validation_status": "locked",
+  "training_period": "NHANES 2005-2018",
+  "weight_variable": "combined_mec_weight"
+}

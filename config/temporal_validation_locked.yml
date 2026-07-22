@@ -1,0 +1,19 @@
+locked: true
+external_cycle: 2021-2023
+not_allowed_before_final_lock:
+- feature_selection
+- missing_strategy_selection
+- hyperparameter_tuning
+- threshold_selection
+- model_recalibration
+- feature_transformation_fitting
+- age_range_selection
+- BMI_waist_decision
+- primary_metric_selection
+unlock_condition: Only after Stage 3 internal-external validation and frozen model
+  configuration are complete.
+stage3b_authorized: true
+authorized_at: '2026-07-20'
+authorization_scope: One-time evaluation of frozen 2005-2018 models in NHANES 2021-2023 without refitting, retuning, recalibration, threshold selection, or feature revision.
+stage3b_gate_status: COMPLETED_PASS
+development_model_lock_preserved: true
