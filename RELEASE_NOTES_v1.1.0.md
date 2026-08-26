@@ -12,3 +12,5 @@ Changes:
 - retained the dual MIT and CC BY 4.0 licensing structure.
 
 No individual-level NHANES data or prediction exports are included.
+
+Version-specific DOI: [10.5281/zenodo.22112890](https://doi.org/10.5281/zenodo.22112890). All-versions DOI: [10.5281/zenodo.21487068](https://doi.org/10.5281/zenodo.21487068).
