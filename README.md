@@ -8,11 +8,14 @@ Development period: NHANES 2005-2018. One-time temporal evaluation: NHANES 2021-
 
 ## Permanent archive and citation
 
-- Frozen GitHub release: [v1.0.0](https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.0.0)
-- Version-specific Zenodo DOI: [10.5281/zenodo.21487069](https://doi.org/10.5281/zenodo.21487069)
+- Frozen GitHub release: [v1.1.0](https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.1.0)
 - All-versions Zenodo DOI: [10.5281/zenodo.21487068](https://doi.org/10.5281/zenodo.21487068)
 
-Use the version-specific DOI when citing the exact release used for the manuscript. The all-versions DOI resolves to the latest archived version.
+Zenodo assigns the version-specific DOI after the GitHub release is published. The exact v1.1.0 DOI is recorded on the repository default branch and in the manuscript package immediately after archiving. Use the version-specific DOI when citing the exact release; the all-versions DOI resolves to the latest archived version.
+
+## v1.1.0 revision archive
+
+This release synchronizes the reviewer-revision materials without changing the locked model fits. It adds the three-stage temporal correction-history table (Supplementary Table S12), clarifies that survey-bootstrap intervals condition on fixed out-of-cycle predictions, broadens the multiplicity boundary across models and metrics, renames the S11 exponentiated-coefficient column to `exp(coefficient)`, and updates the Figure 3 plotting code for harmonized within-row scales.
 
 ## Licensing
 
@@ -22,4 +25,4 @@ Use the version-specific DOI when citing the exact release used for the manuscri
 
 ## Funding
 
-This work was supported by the National Outstanding Young Physician Program (国家优秀青年医师; document no. 2024 (41)). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+This work was supported by the National Outstanding Young Physician Program (Document No. 2024 (41)). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.

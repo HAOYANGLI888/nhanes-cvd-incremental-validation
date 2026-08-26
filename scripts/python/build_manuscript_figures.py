@@ -193,7 +193,7 @@ def build_figure_3(embed_figure_text: bool = True) -> list[Path]:
         SOURCE / "Figure_3_cycle_transportability_source_data.csv", index=False
     )
 
-    fig, axes = plt.subplots(2, 2, figsize=(7.2, 5.25), sharex=True)
+    fig, axes = plt.subplots(2, 2, figsize=(7.2, 5.25), sharex=True, sharey="row")
     cycles = ["2005-2006", "2007-2008", "2009-2010", "2011-2012", "2013-2014", "2015-2016", "2017-2018"]
     panels = [("renal", "delta_AUROC"), ("combined", "delta_AUROC"), ("renal", "delta_PR_AUC"), ("combined", "delta_PR_AUC")]
     for ax, (comparison, metric), label in zip(axes.flat, panels, "abcd"):
@@ -217,9 +217,14 @@ def build_figure_3(embed_figure_text: bool = True) -> list[Path]:
         ax.set_xticklabels([c.replace("20", "") for c in cycles], rotation=40, ha="right")
         ax.set_xlabel("Held-out NHANES cycle")
     if embed_figure_text:
-        fig.suptitle("Transportability of renal and combined biomarker gains across held-out cycles", x=0.05, ha="left",
+        fig.suptitle("Across-cycle reproducibility of renal and combined biomarker gains", x=0.05, ha="left",
                      fontsize=9, fontweight="bold")
-        fig.text(0.05, 0.012, "Points: cycle-specific survey-bootstrap estimates. Dashed line and shaded band: REML modified Hartung–Knapp summary and 95% CI.", fontsize=6.25)
+        fig.text(
+            0.05,
+            0.012,
+            "Points: cycle-specific survey-bootstrap estimates. Dashed line and shaded band: REML modified Hartung–Knapp summary and 95% CI. Y-axis limits are shared within each metric row.",
+            fontsize=6.0,
+        )
     fig.tight_layout(rect=[0.02, 0.05 if embed_figure_text else 0.02, 1, 0.95 if embed_figure_text else 0.99], h_pad=2.0, w_pad=2.0)
     return finish(fig, "Figure_3_cycle_transportability")
 
@@ -340,9 +345,9 @@ Seven NHANES cycles from 2005–2006 through 2017–2018 were used in leave-one-
 
 Pooled paired improvements in (a) area under the receiver-operating-characteristic curve (ΔAUROC), (b) area under the precision–recall curve (ΔPR-AUC), (c) Brier score, and (d) log loss for the primary Elastic Net algorithm. Each extension is compared with its prespecified core model using the same participants and survey weights within that comparison. Points are survey-weighted estimates and horizontal lines are 95% confidence intervals from Rao–Wu rescaled survey bootstrap replicates. Positive values indicate improvement. Renal and inflammatory comparisons used the MEC examination sample; metabolic and combined comparisons used their matched fasting-subsample core models. Accordingly, magnitudes should be interpreted within paired comparisons, not as direct rankings across different target samples.
 
-## Figure 3 | Across-cycle transportability of renal and combined biomarker gains
+## Figure 3 | Across-cycle reproducibility of renal and combined biomarker gains
 
-Cycle-specific changes in (a) AUROC for the renal comparison, (b) AUROC for the combined comparison, (c) PR-AUC for the renal comparison, and (d) PR-AUC for the combined comparison under the primary Elastic Net algorithm. Each point represents performance in one held-out NHANES cycle; vertical lines show Rao–Wu survey-bootstrap 95% confidence intervals. Dashed colored lines and shaded bands show the random-effects pooled effect and its modified Hartung–Knapp 95% confidence interval from restricted maximum-likelihood meta-analysis. The plots assess recurrence of incremental value across validation cycles and are not interpreted as causal chronological trends. I² denotes the percentage of variability attributed to between-cycle heterogeneity.
+Cycle-specific changes in (a) AUROC for the renal comparison, (b) AUROC for the combined comparison, (c) PR-AUC for the renal comparison, and (d) PR-AUC for the combined comparison under the primary Elastic Net algorithm. Each point represents performance in one held-out NHANES cycle; vertical lines show Rao–Wu survey-bootstrap 95% confidence intervals. Dashed colored lines and shaded bands show the random-effects pooled effect and its modified Hartung–Knapp 95% confidence interval from restricted maximum-likelihood meta-analysis. Y-axis limits are shared within each metric row; AUROC and PR-AUC rows use different scales because the metrics have different numerical ranges. The plots assess recurrence of incremental value across validation cycles and are not interpreted as causal chronological trends. I² denotes the percentage of variability attributed to between-cycle heterogeneity.
 
 ## Figure 4 | Exploratory pooled decision-curve analysis
 

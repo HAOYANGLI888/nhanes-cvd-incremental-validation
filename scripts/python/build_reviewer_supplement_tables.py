@@ -46,7 +46,7 @@ def build_variable_dictionary(root: Path) -> pd.DataFrame:
             "units": item.unit,
             "coding_or_formula": formula,
             "cycle_harmonization": item.availability_by_cycle,
-            "sample_or_weight_requirement": "fasting subsample; combined_fasting_weight" if analytic == "tyg_wc" else "MEC domain; combined_mec_weight (fasting weight for Models 2 and 4)",
+            "sample_or_weight_requirement": "fasting subsample; WTSAF2YR" if analytic == "tyg_wc" else "2005-2018 MEC domain (WTMEC2YR); 2021-2023 phlebotomy domain (WTPH2YR); fasting weight for Models 2 and 4",
             "missing_handling": "training-fold median" if item.transformation not in ("categorical", "binary") else "training-fold explicit Missing category",
             "notes": handling,
         })
@@ -77,7 +77,8 @@ def build_variable_dictionary(root: Path) -> pd.DataFrame:
         "notes": "Outcome components were excluded from every predictor set.",
     })
     for analytic, raw, note in [
-        ("combined_mec_weight", "WTMEC2YR", "cycle-specific MEC weights divided by number of pooled cycles within period"),
+        ("combined_mec_weight", "WTMEC2YR", "2005-2018 cycle-specific MEC weights divided by seven"),
+        ("temporal_phlebotomy_weight", "WTPH2YR", "2021-2023 phlebotomy weight for Models 0, 1, and 3; no divisor"),
         ("combined_fasting_weight", "WTSAF2YR", "cycle-specific fasting-subsample weights divided by number of pooled cycles within period"),
         ("strata", "SDMVSTRA", "masked variance stratum; cycle included in the design key"),
         ("psu", "SDMVPSU", "masked variance PSU; cycle included in the design key"),
@@ -89,9 +90,13 @@ def build_variable_dictionary(root: Path) -> pd.DataFrame:
             "raw_NHANES_variables": raw,
             "units": "weight" if "weight" in analytic else "identifier",
             "coding_or_formula": note,
-            "cycle_harmonization": "available in every included cycle",
+            "cycle_harmonization": (
+                "2021-2023 only" if analytic == "temporal_phlebotomy_weight"
+                else "2005-2018 development cycles" if analytic == "combined_mec_weight"
+                else "available in every included cycle"
+            ),
             "sample_or_weight_requirement": "MEC or fasting domain as specified",
-            "missing_handling": "invalid or nonpositive analysis weights excluded; valid strata and PSU required",
+            "missing_handling": "analysis weights <=1e-8 excluded, including SAS special-missing sentinels represented as tiny positive values; valid strata and PSU required",
             "notes": "Rao-Wu rescaled bootstrap respected cycle-specific strata and PSUs.",
         })
     return pd.DataFrame(rows)
@@ -146,12 +151,15 @@ def elastic_net_coefficients(root: Path, manifest: pd.DataFrame) -> pd.DataFrame
             "source_predictor": "intercept",
             "coefficient": float(np.asarray(estimator.intercept_).reshape(-1)[0]),
             "coefficient_scale": "model log-odds intercept after preprocessing",
-            "odds_ratio_per_model_unit": float(np.exp(np.asarray(estimator.intercept_).reshape(-1)[0])),
+            "exp(coefficient)": float(np.exp(np.asarray(estimator.intercept_).reshape(-1)[0])),
         })
         for name, coef in zip(names, coefficients):
             clean = name.split("__", 1)[-1]
             source = clean
-            scale = "one-hot indicator versus omitted reference category"
+            scale = (
+                "one-hot indicator with all levels retained (drop=None); penalized joint-model "
+                "coefficient, not an unadjusted reference-category contrast"
+            )
             if name.startswith("continuous__"):
                 source = clean
                 scale = "one training-sample standard deviation after median imputation"
@@ -164,7 +172,7 @@ def elastic_net_coefficients(root: Path, manifest: pd.DataFrame) -> pd.DataFrame
                 "source_predictor": source,
                 "coefficient": float(coef),
                 "coefficient_scale": scale,
-                "odds_ratio_per_model_unit": float(np.exp(coef)),
+                "exp(coefficient)": float(np.exp(coef)),
             })
     return pd.DataFrame(rows)
 
