@@ -1,12 +1,12 @@
 {
   "title": "NHANES CVD incremental validation reproducibility archive",
   "upload_type": "software",
-  "version": "1.1.0",
-  "publication_date": "2026-08-26",
+  "version": "1.1.1",
+  "publication_date": "2026-08-30",
   "access_right": "open",
   "license": "other-open",
   "language": "eng",
-  "description": "Version 1.1.0 of the analytical code, locked configurations and protocols, frozen model objects, aggregate results, audit gates, and figure source data for repeated cross-sectional and temporal validation of renal, metabolic, and inflammatory markers for prevalent self-reported cardiovascular disease in NHANES. This reviewer-revision archive adds the temporal correction-history table, clarifies conditional survey-bootstrap inference and multiplicity, corrects the Supplementary Table S11 exponentiated-coefficient label, and updates Figure 3 plotting code without changing the locked model fits. Code and model objects are MIT licensed; documentation and aggregate outputs are CC BY 4.0 licensed. No individual-level NHANES data or prediction files are included.",
+  "description": "Version 1.1.1 of the analytical code, locked configurations and protocols, frozen model objects, aggregate results, audit gates, and figure source data for repeated cross-sectional and temporal validation of renal, metabolic, and inflammatory markers for prevalent self-reported cardiovascular disease in NHANES. This metadata-correction release updates the funding statement to Qinghai Clinical Research Center for Respiratory Diseases (No. 2019-SF-L4). Analytical code, locked model fits, aggregate results, and statistical conclusions are unchanged from version 1.1.0. Code and model objects are MIT licensed; documentation and aggregate outputs are CC BY 4.0 licensed. No individual-level NHANES data or prediction files are included.",
   "creators": [
     {"name": "Li, Haoyang", "affiliation": "Qinghai University Affiliated Hospital", "orcid": "0009-0006-0399-9464"},
     {"name": "Li, Xiang", "affiliation": "Qinghai University Affiliated Hospital", "orcid": "0009-0008-7853-5415"},

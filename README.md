@@ -8,11 +8,15 @@ Development period: NHANES 2005-2018. One-time temporal evaluation: NHANES 2021-
 
 ## Permanent archive and citation
 
-- Frozen GitHub release: [v1.1.0](https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.1.0)
-- Version-specific Zenodo DOI: [10.5281/zenodo.22112890](https://doi.org/10.5281/zenodo.22112890)
+- Frozen GitHub release: [v1.1.1](https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.1.1)
+- Version-specific Zenodo DOI: assigned after publication of this release
 - All-versions Zenodo DOI: [10.5281/zenodo.21487068](https://doi.org/10.5281/zenodo.21487068)
 
-Use the version-specific DOI when citing the exact v1.1.0 release; the all-versions DOI resolves to the latest archived version.
+Use the version-specific DOI when citing the exact v1.1.1 release; the all-versions DOI resolves to the latest archived version.
+
+## v1.1.1 metadata correction
+
+This release corrects the funding statement to Qinghai Clinical Research Center for Respiratory Diseases (No. 2019-SF-L4). Analytical code, locked model fits, aggregate results, and the statistical conclusions are unchanged from v1.1.0.
 
 ## v1.1.0 revision archive
 

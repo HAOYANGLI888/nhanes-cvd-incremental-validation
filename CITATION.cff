@@ -2,11 +2,11 @@ cff-version: 1.2.0
 message: "If you use this software or its aggregate outputs, please cite the archived release."
 title: "NHANES CVD incremental validation reproducibility archive"
 type: software
-version: 1.1.0
-date-released: 2026-08-26
-doi: "10.5281/zenodo.22112890"
+version: 1.1.1
+date-released: 2026-08-30
+doi: "10.5281/zenodo.21487068"
 repository-code: "https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation"
-url: "https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.1.0"
+url: "https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.1.1"
 authors:
   - family-names: Li
     given-names: Haoyang
