@@ -26,4 +26,4 @@ This release synchronizes the reviewer-revision materials without changing the l
 
 ## Funding
 
-This work was supported by the National Outstanding Young Physician Program (Document No. 2024 (41)). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+This work was supported by the Qinghai Clinical Research Center for Respiratory Diseases (No. 2019-SF-L4). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
