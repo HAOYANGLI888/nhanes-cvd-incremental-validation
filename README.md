@@ -9,7 +9,7 @@ Development period: NHANES 2005-2018. One-time temporal evaluation: NHANES 2021-
 ## Permanent archive and citation
 
 - Frozen GitHub release: [v1.1.1](https://github.com/HAOYANGLI888/nhanes-cvd-incremental-validation/releases/tag/v1.1.1)
-- Version-specific Zenodo DOI: assigned after publication of this release
+- Version-specific Zenodo DOI: [10.5281/zenodo.22177343](https://doi.org/10.5281/zenodo.22177343)
 - All-versions Zenodo DOI: [10.5281/zenodo.21487068](https://doi.org/10.5281/zenodo.21487068)
 
 Use the version-specific DOI when citing the exact v1.1.1 release; the all-versions DOI resolves to the latest archived version.

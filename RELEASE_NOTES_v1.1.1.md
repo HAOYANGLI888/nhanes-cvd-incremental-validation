@@ -6,4 +6,4 @@ This metadata-correction release updates the funding statement to:
 
 Analytical code, locked model fits, aggregate results, figures, and statistical conclusions are unchanged from v1.1.0.
 
-The all-versions Zenodo DOI is [10.5281/zenodo.21487068](https://doi.org/10.5281/zenodo.21487068). The version-specific DOI will be inserted into the GitHub release description and default-branch citation metadata after Zenodo completes automatic archiving.
+Version-specific DOI: [10.5281/zenodo.22177343](https://doi.org/10.5281/zenodo.22177343). All-versions DOI: [10.5281/zenodo.21487068](https://doi.org/10.5281/zenodo.21487068).
